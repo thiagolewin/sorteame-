@@ -58,7 +58,7 @@ let n = cuadrados.value;
 let a = correctas.value;
 Agregar(caja,n,textoCuadrados,section)
 Aleatorio(correctas.value,n);
-cuadrados.addEventListener("click",()=>{
+cuadrados.addEventListener("mouseup",()=>{
     n = cuadrados.value;
     while (section.firstElementChild != null) {
         section.removeChild(section.firstElementChild);
@@ -74,7 +74,7 @@ cuadrados.addEventListener("click",()=>{
         section.style.gridTemplateColumns = "repeat(10,1fr)"
     } 
 })
-correctas.addEventListener("click",()=>{
+correctas.addEventListener("mouseup",()=>{
     a = correctas.value;
     textoCorrectas.textContent = a;
     Aleatorio(correctas.value,n);
