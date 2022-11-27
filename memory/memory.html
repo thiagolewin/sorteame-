@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <section>
+        <div class="box"><div class="img"></div><div class="box-black"><h3>01</h3></div></div>
+    </section>
+    <div class="vidas">
+        <img src="imagenes/Corazon.png" alt="">
+        <h2>1</h2>
+    </div>
+    <div class="botones">
+        <a href="../index.html" class="boton memory">
+                <h2>Jugar a Sorteame</h2>
+        </a>
+        <div class="rango">
+            <h2>Segundos para ver</h2>
+            <input type="range" min="0" max="25" value="3">
+            <h2 class="nCuad">3</h2>
+        </div>
+        <div class="rango">
+            <h2>N° Vidas</h2>
+            <input type="range" min="1" max="50" value="5">
+            <h2 class="nCuad">5</h2>
+        </div>
+        <div class="rango">
+            <h2>N° cuadrados</h2>
+            <input type="range" min="2" max="50" value="24" step="2">
+            <h2 class="nCuad">50</h2>
+        </div>
+        <button class="boton mostrar">
+            <h2>Mostrar Todo</h2>
+        </button>
+        <button class="boton barajar">
+            <h2>Barajar</h2>
+        </button>
+    </div>
+    <h1 class="memory__titulo">MEMORY!</h1>
+    <div class="ganador">
+        <h2>GANASTE!!</h2>
+    </div>
+    <div class="perdedor">
+        <h2>Sin Vidas</h2>
+    </div>
+</body>
+<script src="memory.js"></script>
+</html>
